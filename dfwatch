@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+# Written by Patrick McKenzie, 2010.
+# I release this work unto the public domain.
+#
+# mangactl      Startup script for manga update.
+# description: Starts manga update as an unprivileged user.
+#
+
+rvmsudo ruby /home/ubuntu/DFWatcher/watcherctl.rb $1
+RETVAL=$?
+
+exit ${RETVAL}
